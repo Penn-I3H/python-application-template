@@ -11,9 +11,7 @@ dest = os.environ['OUTPUT_DIR']
 print("Command line arguments ...")
 print(sys.argv)
 print("ENV variables ...")
-print(os.environ)
+print(os.environment)
 
 shutil.copytree(src, dest, dirs_exist_ok=True)
 print("end of processing")
-
-sys.exit('Error!')
