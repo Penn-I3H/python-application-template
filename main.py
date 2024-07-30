@@ -16,5 +16,4 @@ print(os.environ)
 shutil.copytree(src, dest, dirs_exist_ok=True)
 print("end of processing")
 
-raise Exception("Triggering error to test")
-exit(1)
+sys.exit('Error!')
