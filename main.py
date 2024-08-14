@@ -13,6 +13,6 @@ print(sys.argv)
 print("ENV variables ...")
 print(os.environ)
 
-shutil.copytree(src, dest, dirs_exist_ok=True)
+shutil.copytre(src, dest, dirs_exist_ok=True)
 print("end of processing")
 sys.exit(1)
