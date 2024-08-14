@@ -15,4 +15,4 @@ print(os.environ)
 
 shutil.copytree(src, dest, dirs_exist_ok=True)
 print("end of processing")
-sys.exit('Trigger error message')
+sys.exit(1)
