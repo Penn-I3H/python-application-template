@@ -1,0 +1,37 @@
+{
+    "name": "CSV Echo App",
+    "description": "A Python Docker app that copies all CSV files from INPUT_DIR to OUTPUT_DIR.",
+    "inputs": [
+      {
+        "name": "data-volume",
+        "description": "volume containing the input and output directories",
+        "path": "/service/data",
+        "type": "DIRECTORY"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "outputs",
+        "description": "Output directory containing files",
+        "path": "/service/data/output",
+        "type": "DIRECTORY"
+      }
+    ],
+    "resources": {
+      "cpu_cores": 1,
+      "ram_gb": 1,
+      "disk_gb": 1
+    },
+    "executors": [
+      {
+        "image": "hackathon/python",
+        "command": [ "python3.13", "/service/main.py" ],
+        "env": {
+          "INPUT_DIR": "/service/data/input",
+          "OUTPUT_DIR": "/service/data/output"
+        },
+        "workdir": "/service/data"
+      }
+    ]
+  }
+  
