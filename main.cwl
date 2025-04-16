@@ -1,11 +1,9 @@
 cwlVersion: v1.2
 class: CommandLineTool
 
-baseCommand: ["python3.13", "main.py"]
-
 requirements:
   DockerRequirement:
-    dockerPull: python:3.13.1
+    dockerPull: hackathon/python
   InitialWorkDirRequirement:
     listing:
       - entryname: main.py
@@ -30,7 +28,7 @@ inputs:
     doc: "Input directory"
 
 outputs:
-  output_data:
+  output_dir:
     type: Directory
     outputBinding:
       glob: data/output
