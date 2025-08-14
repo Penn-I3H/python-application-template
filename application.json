@@ -1,0 +1,37 @@
+{
+  "name": "echo-application",
+  "description": "echo-application",
+  "version": "1.0.0",
+  "inputs": [
+    {
+      "name": "Packages",
+      "description": "Pipeline packages",
+      "path": "/input",
+      "files": [
+        {
+          "id": "package_file",
+          "description": "A package file",
+          "ext": "*",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Packages",
+      "description": "Pipeline packages",
+      "path": "/output",
+      "files": [
+        {
+          "id": "package_file",
+          "description": "A package file",
+          "ext": "*",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "params": [],
+  "depends_on": ["*"]
+}
