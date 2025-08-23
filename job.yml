@@ -1,0 +1,7 @@
+# job.yml
+script:
+  class: File
+  path: main.py
+input_dir:
+  class: Directory
+  path: data/input

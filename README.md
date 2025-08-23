@@ -16,3 +16,7 @@ To test, create `input`, `output` and `resources` subfolders in the `data` direc
 Re-Run: `docker-compose up --build`
 
 The testfile should be copied to the `data/output` directory.
+
+To run cwl file:
+
+`cwltool --outdir=data main.cwl job.yml`
