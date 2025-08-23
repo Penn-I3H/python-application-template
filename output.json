@@ -1,0 +1,13 @@
+{
+    "name" : "echo/output",
+    "desc" : "echo output",
+    "files" : [
+        {
+            "id" : "fcs",
+            "filename" : "output.csv",
+            "desc" : "csv file",
+            "ext" : ".csv",
+            "required" : true
+        }
+    ]
+}
