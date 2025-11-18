@@ -92,8 +92,7 @@ Every Pennsieve application requires an `application.json` file that describes i
       ]
     }
   ],
-  "params": [],
-  "depends_on": ["*"]
+  "params": []
 }
 ```
 
