@@ -1,0 +1,56 @@
+================================================================================
+Pennsieve Invite Sender
+================================================================================
+
+Configuration:
+  Pennsieve Host: https://api.pennsieve.io
+  Organization ID: N:organization:388563ac-49b5-4fc1-b6b0-2fba767e54b0
+  CSV File: ./data/output/test_invite.csv
+  Default Permission: manager
+  API Key: eyJraWQiOiJwcjhTaWE2...
+
+Loading invites from: ./data/output/test_invite.csv
+Found 1 users to invite
+
+================================================================================
+Users to invite:
+  1. Edmore Moyo (etmoyo@gmail.com)
+================================================================================
+
+Proceed with sending invites? (yes/no): 
+Sending 1 invite(s)
+  URL: https://api.pennsieve.io/organizations/N:organization:388563ac-49b5-4fc1-b6b0-2fba767e54b0/members
+  Role: manager
+  Payload: {
+  "invites": [
+    {
+      "firstName": "Edmore",
+      "lastName": "Moyo",
+      "email": "etmoyo@gmail.com",
+      "customMessage": "Welcome to the Pennsieve Hackathon",
+      "inviteRole": "1"
+    }
+  ],
+  "role": "manager"
+}
+✓ Successfully sent invites
+  Response: {
+  "etmoyo@gmail.com": {
+    "success": true,
+    "message": "Invited new user to organization: Pennsieve Hackathon",
+    "email": "etmoyo@gmail.com",
+    "invite": {
+      "id": "N:user:ca98bb83-42d9-4781-98d2-c0671a79113a",
+      "email": "etmoyo@gmail.com",
+      "firstName": "Edmore",
+      "lastName": "Moyo",
+      "permission": "administer",
+      "validUntil": "2026-05-17T15:33:06.407Z"
+    }
+  }
+}
+
+================================================================================
+Summary:
+  Successfully sent 1 invite(s)
+================================================================================
