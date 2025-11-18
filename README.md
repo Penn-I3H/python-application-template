@@ -415,9 +415,11 @@ git branch -M main
 git push -u origin main
 ```
 
-### Repository Must Be Public
+### Repository Visibility
 
-Pennsieve requires a **public repository** to build your application. Ensure visibility is set to public in your GitHub repository settings.
+Pennsieve currently requires a **public GitHub repository** to build your application. Ensure visibility is set to public in your GitHub repository settings.
+
+> **Note**: Private repository support is currently in development and will be available in a future release.
 
 ### Versioning
 
@@ -445,18 +447,7 @@ The registration process:
 1. Navigate to the workflows section in your Pennsieve workspace
 2. Click to register a new application
 3. Provide your GitHub repository URL
-4. Pennsieve will validate `application.json` and build your Docker image
-5. Test your application on sample data
-
-### What Happens During Deployment
-
-When you register your application, Pennsieve will:
-
-1. Clone your GitHub repository
-2. Validate `application.json`
-3. Build your Docker image using your `Dockerfile`
-4. Store the image in Pennsieve's container registry
-5. Make the application available for workflows
+4. Test your application on sample data
 
 ### Running on Pennsieve
 
