@@ -453,8 +453,8 @@ The registration process:
 Once registered, you can:
 
 1. Select files or packages in your dataset
-2. Choose your registered application
-3. Configure parameters (if defined)
+2. Choose your registered application (legacy) or a named workflow (new!)
+3. Configure parameters (if defined) - currently supported only for legacy.
 4. Start the workflow
 
 Pennsieve handles:
