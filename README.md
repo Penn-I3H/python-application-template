@@ -443,7 +443,7 @@ Follow the official Pennsieve documentation to register your application:
 
 The registration process:
 
-1. Navigate to the workflows section in your Pennsieve workspace
+1. Navigate to the applications section in your Pennsieve workspace
 2. Click to register a new application
 3. Provide your GitHub repository URL
 4. Test your application on sample data
