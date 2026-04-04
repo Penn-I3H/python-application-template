@@ -1,0 +1,13 @@
+{
+    "name" : "echo/input",
+    "desc" : "echo input",
+    "files" : [
+        {
+            "id" : "fcs",
+            "filename" : "input.fcs",
+            "desc" : "fcs file",
+            "ext" : ".fcs",
+            "required" : true
+        }
+    ]
+}
